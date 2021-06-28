@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios' buildActiveScheme='true'>
+    <pages>
+        <page name='C1'/>
+        <page name='C2'/>
+        <page name='C3'/>
+        <page name='C4'/>
+        <page name='C5'/>
+        <page name='C6'/>
+        <page name='C7'/>
+        <page name='C8 (Not clear)'/>
+        <page name='C9'/>
+        <page name='C10'/>
+        <page name='C11'/>
+        <page name='C12'/>
+    </pages>
+</playground>
