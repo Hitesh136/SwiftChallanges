@@ -10,4 +10,25 @@ import Foundation
 
 //c41()
 //c42()
-c43()
+//c43()
+//c44()
+//c45()
+//c46()
+ 
+class Fruit {
+    var name = "apple" {
+        willSet {
+            self.name = "banana"
+        }
+        didSet {
+            self.name = "cherry"
+        }
+    }
+    
+    init() {
+        self.name = "mango"
+    }
+}
+
+let fruit = Fruit()
+print(fruit.name)

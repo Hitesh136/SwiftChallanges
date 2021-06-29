@@ -35,3 +35,44 @@ public func c43() {
     print(serenity.type, serenity.age)
 }
 
+public func c44() {
+    let numbers: [String?] = ["1", "two", nil]
+    let mapped: [Any] = numbers.compactMap{ $0 }
+    let intArray: [Int?] = numbers.compactMap{ Int($0 ?? "0") }
+    print(mapped.count + intArray.count)
+}
+
+public func c45() {
+    var x: Int? = nil
+    x? = 10
+    var y: Int? = 10
+    y? = 5
+    var z: Int? = nil
+    z = 10
+    
+    print(x)
+}
+
+public func c46() {
+    class BaseViewController {
+        var view = "" {
+            didSet {
+                print("Base: \(view)")
+            }
+        }
+    }
+    
+    class SubVC: BaseViewController {
+        override var view: String {
+            didSet {
+                print("SubVC: \(view)")
+            }
+        }
+    }
+    
+    let viewController = SubVC()
+    viewController.view = "x"
+    viewController.view = "y"
+}
+
+
